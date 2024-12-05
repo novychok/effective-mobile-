@@ -1,0 +1,13 @@
+[Unit]
+Description=Test HTTP Server
+After=network.target
+
+[Service]
+ExecStart=/home/eric/repository/effective-mobile/process-monitor.sh
+WorkingDirectory=/home/eric/repository/effective-mobile
+Restart=always
+RestartSec=5s
+User=root
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  testing-server:
+    image: testing-server
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    ports:
+      - "1333:1333"
